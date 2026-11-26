@@ -17,14 +17,14 @@ Pick one. All of them add Sky to your application menu (launcher).
 **1. From GitHub with pipx (recommended)**
 
 ```bash
-pipx install git+https://github.com/<your-user>/Sky
+pipx install git+https://github.com/Bilikon-Project/Sky
 sky --install-desktop      # adds the menu entry + icon
 ```
 
 **2. Clone and run the installer**
 
 ```bash
-git clone https://github.com/<your-user>/Sky && cd Sky
+git clone https://github.com/Bilikon-Project/Sky && cd Sky
 ./install.sh               # own venv, dependencies, menu entry, `sky` command
 ```
 
