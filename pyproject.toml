@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sky-fm"
+dynamic = ["version"]
+description = "A file manager for Linux with a terminal (TUI) and a graphical (GUI) interface"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = ["textual>=1.0", "PyQt6>=6.5"]
+classifiers = [
+    "Operating System :: POSIX :: Linux",
+    "Topic :: System :: Filesystems",
+]
+
+[project.scripts]
+sky = "sky.cli:main"
+
+[tool.setuptools]
+packages = ["sky"]
+
+[tool.setuptools.dynamic]
+version = { attr = "sky.__version__" }
+
+[tool.setuptools.package-data]
+sky = ["data/*"]

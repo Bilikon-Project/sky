@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Sky
+GenericName=File Manager
+Comment=A file manager for Linux
+Exec=sky gui
+Icon=sky
+Terminal=false
+Categories=System;FileManager;Utility;
+Keywords=files;manager;explorer;
+StartupNotify=true
